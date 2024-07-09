@@ -8,7 +8,7 @@
 /* COLORS */
 body {
   background-color: #f4f4f4; /* Light gray background */
-  color: #333333; /* Dark gray text for contrast */
+  color: #6c757d; /* Dark gray text for contrast */
 }
 
 header,
@@ -26,10 +26,50 @@ select {
   background-color: #ffffff; /* White background for input fields */
   color: #495057; /* Dark gray for text, ensuring readability */
   border: 1px solid #ced4da; /* Light gray border for subtle definition */
+  padding: 7px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
-.faq-item h2 {
-  color: #6c757d; /* Soft gray for a sleek, professional appearance */
+.form-item {
+  margin-bottom: 15px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+button:enabled {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  color: #333; /* Soft gray for a sleek, professional appearance */
 }
 
 button {
@@ -60,6 +100,23 @@ body {
 h1,
 h2 {
   font-family: "Merriweather", serif;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  text-align: center;
+}
+
+.formulario h2 {
+  text-align: center;
+}
+
+.form-item {
+  margin: 40px auto;
+}
+
+.form-item h2 {
+  text-align: left;
 }
 
 header {
@@ -73,7 +130,7 @@ header h1 {
 
 main {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -91,11 +148,9 @@ main {
 
 .faq-item h2 {
   font-size: 24px; /* Default size for FAQ titles on desktop */
-  margin-bottom: 10px;
 }
 
 .faq-item p {
-  font-size: 16px;
   margin-left: 20px;
 }
 
@@ -111,6 +166,46 @@ footer {
 a {
   word-wrap: break-word; /* Allows the words to break and wrap onto the next line */
   overflow-wrap: break-word; /* Ensures that long words do not overflow their container */
+}
+
+nav {
+  background-color: #f4f4f4; /* Consistent with the light theme */
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item p {
+  margin: 0;
+}
+
+.nav-item a {
+  display: block; /* Makes the link fill the entire area of the <li> */
+  padding: 8px 12px; /* Makes the link easier to tap */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #007bff; /* Slight background to emphasize clickability */
+  border-radius: 5px; /* Rounded corners for a button-like appearance */
+  transition: background-color 0.3s ease; /* Smooth transition for interaction */
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  color: #1a73e8;
+  text-decoration: underline;
+  background-color: #d6d6d6; /* Darker background on hover/focus */
 }
 
 @media (max-width: 600px) {
@@ -140,5 +235,20 @@ a {
 
   .faq-item h2 {
     font-size: 20px; /* Smaller font size for FAQ titles on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack the navigation items vertically on small screens */
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Reduce margin between items on smaller screens */
+  }
+
+  .nav-item a {
+    font-size: 16px; /* Adjust font size for better readability on small devices */
+    padding: 10px; /* Increase padding for easier tapping */
   }
 }
