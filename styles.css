@@ -1,0 +1,136 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORS */
+body {
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333333; /* Dark gray text for contrast */
+}
+
+header,
+footer {
+  color: #53595f; /* Slightly darker text color for visibility */
+}
+
+a {
+  color: #007bff; /* Soft blue for links */
+}
+
+input,
+textarea,
+select {
+  background-color: #ffffff; /* White background for input fields */
+  color: #495057; /* Dark gray for text, ensuring readability */
+  border: 1px solid #ced4da; /* Light gray border for subtle definition */
+}
+
+.faq-item h2 {
+  color: #6c757d; /* Soft gray for a sleek, professional appearance */
+}
+
+button {
+  background-color: #007bff; /* Bright blue for buttons, provides good contrast */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3; /* A darker blue on hover for interactive feedback */
+}
+
+button:hover {
+  background-color: #0b5ed7; /* A slightly darker blue on hover */
+}
+
+/* END COLORS  */
+
+body {
+  font-size: 18px; /* Default body font size for desktop */
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px; /* Default size for the main header on desktop */
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.faq-container {
+  margin: 20px 0;
+}
+
+.faq-item {
+  list-style: decimal; /* Uses decimal numbers */
+  list-style-position: outside; /* Ensures the numbers are positioned outside the text box but aligned */
+  color: #6c757d; /* Stylish medium gray for numbers and text */
+  margin-bottom: 20px; /* Adds space between items */
+  padding-left: 20px; /* Ensures there is some space between the numbers and the text */
+}
+
+.faq-item h2 {
+  font-size: 24px; /* Default size for FAQ titles on desktop */
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .faq-item {
+    list-style: decimal;
+    list-style-position: outside; /* Keeps the alignment consistent even on small screens */
+    margin-bottom: 15px; /* Slightly less space between items for compact view */
+    padding-left: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .faq-item p {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Smaller font size for body text on mobile */
+  }
+
+  header h1 {
+    font-size: 28px; /* Smaller font size for the main header on mobile */
+  }
+
+  .faq-item h2 {
+    font-size: 20px; /* Smaller font size for FAQ titles on mobile */
+  }
+}
