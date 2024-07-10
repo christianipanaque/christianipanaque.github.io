@@ -205,6 +205,11 @@ nav ul {
   background-color: #009CA4;
 }
 
+.red a {
+  background-color: #E44236; /* Slight background to emphasize clickability */
+}
+
+
 .nav-item-internal a:hover,
 .nav-item-internal a:focus,
 .nav-item a:hover,
