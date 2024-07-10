@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* COLORS */
 body {
   background-color: #f4f4f4; /* Light gray background */
   color: #6c757d; /* Dark gray text for contrast */
@@ -59,25 +58,14 @@ button {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  border-radius: 5px;
+  width: 100%;
 }
 
 button:enabled {
   background-color: #007bff;
   color: white;
   cursor: pointer;
-}
-
-h1,
-h2 {
-  color: #333; /* Soft gray for a sleek, professional appearance */
-}
-
-button {
-  background-color: #007bff; /* Bright blue for buttons, provides good contrast */
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
 }
 
 button:hover {
@@ -88,7 +76,10 @@ button:hover {
   background-color: #0b5ed7; /* A slightly darker blue on hover */
 }
 
-/* END COLORS  */
+h1,
+h2 {
+  color: #333; /* Soft gray for a sleek, professional appearance */
+}
 
 body {
   font-size: 18px; /* Default body font size for desktop */
@@ -169,8 +160,11 @@ a {
 }
 
 nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
   background-color: #f4f4f4; /* Consistent with the light theme */
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 
 nav ul {
@@ -178,12 +172,15 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .nav-item {
-  margin: 0 15px;
+  margin: 5px 0; /* Reduce margin between items on smaller screens */
+  width: 100%;
+  text-align: center;
 }
 
 .nav-item p {
