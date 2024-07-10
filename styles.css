@@ -177,16 +177,19 @@ nav ul {
   align-items: center;
 }
 
+.nav-item-internal,
 .nav-item {
   margin: 5px 0; /* Reduce margin between items on smaller screens */
   width: 100%;
   text-align: center;
 }
 
+.nav-item-internal p,
 .nav-item p {
   margin: 0;
 }
 
+.nav-item-internal a,
 .nav-item a {
   display: block; /* Makes the link fill the entire area of the <li> */
   padding: 8px 12px; /* Makes the link easier to tap */
@@ -198,6 +201,12 @@ nav ul {
   transition: background-color 0.3s ease; /* Smooth transition for interaction */
 }
 
+.nav-item-internal a {
+  background-color: #009CA4;
+}
+
+.nav-item-internal a:hover,
+.nav-item-internal a:focus,
 .nav-item a:hover,
 .nav-item a:focus {
   color: #1a73e8;
@@ -240,10 +249,12 @@ nav ul {
     flex-direction: column; /* Stack the navigation items vertically on small screens */
   }
 
+  .nav-item-internal,
   .nav-item {
     margin: 5px 0; /* Reduce margin between items on smaller screens */
   }
 
+  .nav-item-internal a,
   .nav-item a {
     font-size: 16px; /* Adjust font size for better readability on small devices */
     padding: 10px; /* Increase padding for easier tapping */
