@@ -8,15 +8,20 @@
 body {
   background-color: #f4f4f4; /* Light gray background */
   color: #6c757d; /* Dark gray text for contrast */
+  font-size: 18px; /* Default body font size for desktop */
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  padding: 30px 20px 20px 20px;
+}
+
+a {
+  word-wrap: break-word; /* Allows the words to break and wrap onto the next line */
+  overflow-wrap: break-word; /* Ensures that long words do not overflow their container */
 }
 
 header,
 footer {
   color: #53595f; /* Slightly darker text color for visibility */
-}
-
-a {
-  color: #007bff; /* Soft blue for links */
 }
 
 input,
@@ -42,13 +47,6 @@ input[type="email"] {
   box-sizing: border-box;
 }
 
-button:disabled {
-  background-color: #ccc;
-  color: #666;
-  cursor: not-allowed;
-  font-weight: bold;
-}
-
 button {
   padding: 10px 20px;
   background-color: #007bff;
@@ -57,9 +55,20 @@ button {
   cursor: pointer;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
   border-radius: 5px;
   width: 100%;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
 }
 
 button:enabled {
@@ -72,24 +81,9 @@ button:hover {
   background-color: #0056b3; /* A darker blue on hover for interactive feedback */
 }
 
-button:hover {
-  background-color: #0b5ed7; /* A slightly darker blue on hover */
-}
-
 h1,
 h2 {
   color: #333; /* Soft gray for a sleek, professional appearance */
-}
-
-body {
-  font-size: 18px; /* Default body font size for desktop */
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
-  padding: 30px 20px 20px 20px;
-}
-
-h1,
-h2 {
   font-family: "Merriweather", serif;
   margin-bottom: 10px;
 }
@@ -150,11 +144,6 @@ footer {
   padding: 20px;
 }
 
-a {
-  word-wrap: break-word; /* Allows the words to break and wrap onto the next line */
-  overflow-wrap: break-word; /* Ensures that long words do not overflow their container */
-}
-
 nav {
   max-width: 800px;
   margin: 0 auto;
@@ -191,28 +180,30 @@ nav ul {
   padding: 8px 12px; /* Makes the link easier to tap */
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
   background-color: #007bff; /* Slight background to emphasize clickability */
   border-radius: 5px; /* Rounded corners for a button-like appearance */
   transition: background-color 0.3s ease; /* Smooth transition for interaction */
 }
 
 .nav-item-internal a {
-  background-color: #009CA4;
+  background-color: #009ca4;
 }
 
 .red a {
-  background-color: #E44236; /* Slight background to emphasize clickability */
+  background-color: #e44236; /* Slight background to emphasize clickability */
 }
-
 
 .nav-item-internal a:hover,
 .nav-item-internal a:focus,
 .nav-item a:hover,
 .nav-item a:focus {
-  color: #1a73e8;
-  text-decoration: underline;
-  background-color: #d6d6d6; /* Darker background on hover/focus */
+  background-color: #0056b3; /* Darker background on hover/focus */
+  color: #fff;
+}
+
+.nav-item-internal a:hover,
+.nav-item-internal a:focus {
+  background-color: #00757b;
 }
 
 @media (max-width: 600px) {
@@ -229,23 +220,7 @@ nav ul {
   .faq-item p {
     margin-left: 10px;
   }
-}
 
-@media (max-width: 768px) {
-  body {
-    font-size: 16px; /* Smaller font size for body text on mobile */
-  }
-
-  header h1 {
-    font-size: 28px; /* Smaller font size for the main header on mobile */
-  }
-
-  .faq-item h2 {
-    font-size: 20px; /* Smaller font size for FAQ titles on mobile */
-  }
-}
-
-@media (max-width: 600px) {
   nav ul {
     flex-direction: column; /* Stack the navigation items vertically on small screens */
   }
@@ -257,7 +232,20 @@ nav ul {
 
   .nav-item-internal a,
   .nav-item a {
-    font-size: 16px; /* Adjust font size for better readability on small devices */
     padding: 10px; /* Increase padding for easier tapping */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px; /* Smaller font size for body text on mobile */
+  }
+
+  header h1 {
+    font-size: 28px; /* Smaller font size for the main header on mobile */
+  }
+
+  .faq-item h2 {
+    font-size: 20px; /* Smaller font size for FAQ titles on mobile */
   }
 }
