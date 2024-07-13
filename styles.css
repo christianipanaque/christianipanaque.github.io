@@ -18,6 +18,10 @@ a {
   word-wrap: break-word; /* Allows the words to break and wrap onto the next line */
   overflow-wrap: break-word; /* Ensures that long words do not overflow their container */
 }
+img {
+  height: auto;
+  width: 100%;
+}
 
 header,
 footer {
@@ -48,8 +52,8 @@ input[type="email"] {
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 15px 20px;
+  background-color: #981515;
   color: white;
   border: none;
   cursor: pointer;
@@ -57,6 +61,7 @@ button {
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
   width: 100%;
+  text-transform: uppercase;
 }
 
 button:disabled {
@@ -179,13 +184,13 @@ nav ul {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #007bff; /* Slight background to emphasize clickability */
+  background-color: #981515; /* Slight background to emphasize clickability */
   border-radius: 5px; /* Rounded corners for a button-like appearance */
   transition: background-color 0.3s ease; /* Smooth transition for interaction */
 }
 
 .nav-item-internal a {
-  background-color: #009ca4;
+  background-color: #981515;
 }
 
 .red a {
@@ -196,13 +201,13 @@ nav ul {
 .nav-item-internal a:focus,
 .nav-item a:hover,
 .nav-item a:focus {
-  background-color: #0056b3; /* Darker background on hover/focus */
+  background-color: #610c0c; /* Darker background on hover/focus */
   color: #fff;
 }
 
 .nav-item-internal a:hover,
 .nav-item-internal a:focus {
-  background-color: #00757b;
+  background-color: #610c0c;
 }
 
 @media (max-width: 600px) {
