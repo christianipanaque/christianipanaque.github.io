@@ -116,7 +116,7 @@ header h1 {
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0 0 0;
 }
 
 .faq-container {
@@ -178,6 +178,7 @@ nav ul {
   padding: 8px 12px; /* Makes the link easier to tap */
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
   background-color: #007bff; /* Slight background to emphasize clickability */
   border-radius: 5px; /* Rounded corners for a button-like appearance */
   transition: background-color 0.3s ease; /* Smooth transition for interaction */
