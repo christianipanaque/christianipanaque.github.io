@@ -124,11 +124,9 @@ main {
 }
 
 .faq-item {
-  list-style: decimal; /* Uses decimal numbers */
-  list-style-position: outside; /* Ensures the numbers are positioned outside the text box but aligned */
   color: #6c757d; /* Stylish medium gray for numbers and text */
   margin-bottom: 20px; /* Adds space between items */
-  padding-left: 20px; /* Ensures there is some space between the numbers and the text */
+  padding-left: 0; /* Ensures there is some space between the numbers and the text */
 }
 
 .faq-item h2 {
@@ -136,7 +134,7 @@ main {
 }
 
 .faq-item p {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 footer {
@@ -211,14 +209,12 @@ nav ul {
     width: 100%; /* Ensures the container fits within the viewport */
   }
   .faq-item {
-    list-style: decimal;
-    list-style-position: outside; /* Keeps the alignment consistent even on small screens */
     margin-bottom: 15px; /* Slightly less space between items for compact view */
-    padding-left: 15px; /* Reduced padding for smaller screens */
+    padding-left: 0; /* Reduced padding for smaller screens */
   }
 
   .faq-item p {
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   nav ul {
