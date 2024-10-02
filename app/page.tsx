@@ -1,8 +1,10 @@
-export default function Page() {
+import GoogleAnalytics from "../components/GoogleAnalytics";
+
+export default function Page({}) {
   return (
-    <body className="font-body bg-zinc-100 text-stone-500 leading-relaxed">
+    <body className="bg-zinc-100 text-stone-500 leading-relaxed">
       <header className="text-center">
-        <h1 className="font-display text-3xl">
+        <h1 className="text-3xl">
           Educación para Todos con la Inteligencia Artificial
         </h1>
       </header>
@@ -378,6 +380,7 @@ export default function Page() {
           </li>
         </ul>
       </nav>
+      <GoogleAnalytics />
     </body>
   );
 }

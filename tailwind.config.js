@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       fontFamily: {
         merriweather: ["Merriweather", "ui-serif", "serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
     },
   },
@@ -29,6 +30,7 @@ module.exports = {
         },
         body: {
           padding: "30px 20px 20px 20px",
+          fontFamily: theme("fontFamily.roboto"),
         },
         h1: {
           fontFamily: theme("fontFamily.merriweather"),
