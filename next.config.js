@@ -1,5 +1,7 @@
-// next.config.js
+const path = require('path');
+
 module.exports = {
-  output: "export", // This tells Next.js you are exporting a static site
-  trailingSlash: true, // Optional: adds a trailing slash to URLs
+  output: "export",  // Enable static export
+  trailingSlash: true,  // Optional: Adds trailing slashes to URLs
+  distDir: 'docs',  // Optional: Changes the .next build folder, but not necessary
 };
