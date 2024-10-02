@@ -29,15 +29,15 @@ module.exports = {
           boxSizing: "border-box",
         },
         body: {
-          padding: "30px 20px 20px 20px",
+          padding: "20px 20px 20px 20px",
           fontFamily: theme("fontFamily.roboto"),
         },
         h1: {
           fontFamily: theme("fontFamily.merriweather"),
-          fontSize: theme("fontSize.2xl"),
+          fontSize: theme("fontSize.3xl"),
           color: theme("colors.stone.800"),
-          marginBottom: theme("spacing.4"),
-          marginTop: theme("spacing.3"),
+          marginTop: theme("spacing.5"),
+          marginBottom: theme("spacing.7"),
           fontWeight: "bold",
           textAlign: "center",
         },
@@ -45,15 +45,15 @@ module.exports = {
           fontFamily: theme("fontFamily.merriweather"),
           fontSize: theme("fontSize.2xl"),
           color: theme("colors.stone.800"),
-          marginBottom: theme("spacing.4"),
-          marginTop: theme("spacing.3"),
+          marginTop: theme("spacing.6"),
+          marginBottom: theme("spacing.6"),
           fontWeight: "bold",
           textAlign: "center",
         },
         img: {
           height: "auto",
           width: "100%",
-          boxShadow: "4px 4px 4px #9a9a9a", // Add custom box-shadow
+          boxShadow: "4px 4px 4px #9a9a9a",
         },
         nav: {
           paddingBottom: "20px",

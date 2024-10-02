@@ -3,55 +3,49 @@ import GoogleAnalytics from "../components/GoogleAnalytics";
 export default function Page({}) {
   return (
     <body className="bg-zinc-100 text-stone-500 leading-relaxed">
-      <header className="text-center">
-        <h1 className="text-3xl">
+      <header>
+        <h1>
           Educación para Todos con la Inteligencia Artificial
         </h1>
       </header>
       <nav className="max-w-screen-md my-0 mx-auto text-center text-white">
-        <ul className="flex-col">
-          <li className="my-2">
-            <p>
-              <a
-                href="https://chatgpt.com"
-                target="_blank"
-                className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg"
-              >
-                ChatGPT Oficial
-              </a>
-            </p>
-          </li>
-          <li className="my-2">
-            <p>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.openai.chatgpt&pcampaignid=web_share"
-                target="_blank"
-                className="py-4 px-6 block bg-red-700 rounded-xl"
-              >
-                ChatGPT Google Play Store
-              </a>
-            </p>
-          </li>
-          <li className="my-2">
-            <p>
-              <a
-                href="https://apps.apple.com/us/app/chatgpt/id6448311069"
-                target="_blank"
-                className="py-4 px-6 block bg-red-700 rounded-xl"
-              >
-                ChatGPT Apple Store
-              </a>
-            </p>
-          </li>
-        </ul>
+        <div className="flex-col">
+          <div className="my-2">
+            <a
+              href="https://chatgpt.com"
+              target="_blank"
+              className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg"
+            >
+              ChatGPT Oficial
+            </a>
+          </div>
+          <div className="my-2">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.openai.chatgpt&pcampaignid=web_share"
+              target="_blank"
+              className="py-4 px-6 block bg-red-700 rounded-xl"
+            >
+              ChatGPT Google Play Store
+            </a>
+          </div>
+          <div className="my-2">
+            <a
+              href="https://apps.apple.com/us/app/chatgpt/id6448311069"
+              target="_blank"
+              className="py-4 px-6 block bg-red-700 rounded-xl"
+            >
+              ChatGPT Apple Store
+            </a>
+          </div>
+        </div>
       </nav>
       <main className="max-w-screen-md my-0 mx-auto">
-        <section className="faq-container">
+        <section>
           <img
             src="./images/leader-male-001.webp"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               Transforma tu Futuro con Educación Accesible y Personalizada
             </h2>
@@ -66,7 +60,7 @@ export default function Page({}) {
             src="./images/female-leader-001.webp"
             alt="Peruvian female leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>¿Qué puedo aprender con ChatGPT?</h2>
             <p>
               Con ChatGPT, la educación está ahora al alcance de todos sin costo
@@ -80,7 +74,7 @@ export default function Page({}) {
             src="./images/male-brown-skin-leader-power.webp"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>¿Realmente es gratis usar ChatGPT? ¿Hay cargos ocultos?</h2>
             <p>
               Sí, es completamente gratis. No hay tarifas de inicio ni cargos
@@ -94,7 +88,7 @@ export default function Page({}) {
             src="./images/female-leader-004.webp"
             alt="Peruvian female leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>¿Necesito conocimientos previos para usar ChatGPT?</h2>
             <p>
               No, no necesitas conocimientos previos. ChatGPT está diseñado para
@@ -108,7 +102,7 @@ export default function Page({}) {
             src="./images/male-leader-003.webp"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>¿Cómo puede ChatGPT hacer la educación más accesible?</h2>
             <p>
               ChatGPT hace que la educación sea más accesible al proporcionar
@@ -121,7 +115,7 @@ export default function Page({}) {
             src="./images/female-leader-005.webp"
             alt="Peruvian female leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿Puedo usar ChatGPT en mi teléfono móvil o solo en computadoras?
             </h2>
@@ -136,7 +130,7 @@ export default function Page({}) {
             src="./images/male-leader-inclusion.webp"
             alt="Peruvian female leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>¿Cómo puedo maximizar mi aprendizaje con ChatGPT?</h2>
             <p>
               Para maximizar tu aprendizaje, utiliza ChatGPT para profundizar en
@@ -150,7 +144,7 @@ export default function Page({}) {
             src="./images/female-leader-006.webp"
             alt="Peruvian female leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>¿ChatGPT siempre tiene la respuesta correcta?</h2>
             <p>
               ChatGPT es una herramienta poderosa, pero es recomendable
@@ -164,7 +158,7 @@ export default function Page({}) {
             src="./images/leader-male-006.webp"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿Puede ChatGPT ayudarme a preparar para exámenes o
               certificaciones?
@@ -188,7 +182,7 @@ export default function Page({}) {
             src="./images/female-leading-robots.webp"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿Cómo puedo empezar una sesión de estudio con ChatGPT sobre un
               tema específico?
@@ -208,7 +202,7 @@ export default function Page({}) {
             src="./images/male-leading-robots.webp"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿Cómo puedo pedir a ChatGPT que me ayude con problemas específicos
               de matemáticas?
@@ -228,7 +222,7 @@ export default function Page({}) {
             src="./images/female-leader-pose.webp"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿ChatGPT puede ayudarme a entender artículos científicos
               complejos?
@@ -246,7 +240,7 @@ export default function Page({}) {
             src="./images/male-leader-004.webp"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿Cómo puedo pedir a ChatGPT que genere ideas o temas para un
               proyecto?
@@ -264,7 +258,7 @@ export default function Page({}) {
             src="./images/female-leader-strong-power.webp"
             alt="Peruvian female next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿ChatGPT puede asistirme en la preparación para debates o
               discusiones en clase?
@@ -284,7 +278,7 @@ export default function Page({}) {
             src="./images/male-leading-robots-walking.webp"
             alt="Peruvian male leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿Cómo puede ChatGPT ayudarme a mejorar mis habilidades de
               escritura profesional?
@@ -303,7 +297,7 @@ export default function Page({}) {
             src="./images/peruvian-woman-001.webp"
             alt="Peruvian female leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿ChatGPT puede ayudarme a preparar presentaciones para el trabajo?
             </h2>
@@ -320,7 +314,7 @@ export default function Page({}) {
             src="./images/peruvian-male-leadership-pose.webp"
             alt="Peruvian female leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿Puede ChatGPT asesorarme en la toma de decisiones de negocio?
             </h2>
@@ -337,7 +331,7 @@ export default function Page({}) {
             src="./images/male-leader-002.webp"
             alt="Peruvian male leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿Cómo puede ChatGPT ayudarme a mantenerme actualizado con las
               últimas tendencias en mi industria?
@@ -355,7 +349,7 @@ export default function Page({}) {
             src="./images/peruvian-woman-002.webp"
             alt="Peruvian female leader next to a robot. Peruvian flag in the background."
           />
-          <div className="mb-5">
+          <div className="mb-8">
             <h2>
               ¿ChatGPT puede ayudarme a mejorar mis habilidades de negociación?
             </h2>
@@ -371,14 +365,17 @@ export default function Page({}) {
         </section>
       </main>
 
-      <nav>
-        <ul>
-          <li className="nav-item-internal">
-            <p>
-              <a href="https://christianipanaque.com/ayuda.html">Ayuda</a>
-            </p>
-          </li>
-        </ul>
+      <nav className="max-w-screen-md my-0 mx-auto text-center text-white">
+        <div className="flex-col">
+          <div className="my-2">
+            <a
+              href="https://christianipanaque.com/ayuda.html"
+              className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg"
+            >
+              Ayuda
+            </a>
+          </div>
+        </div>
       </nav>
       <GoogleAnalytics />
     </body>
