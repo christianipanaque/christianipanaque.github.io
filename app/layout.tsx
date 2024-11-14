@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import '../styles/checkboxes.css';
+import '../styles/radios.css';
 
 export default function RootLayout({
   children,
@@ -10,7 +12,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Educación para todos con la inteligencia artificial</title>
+        <title>Educación Digital sin Límites con la Inteligencia Artificial</title>
 
         {/* Preload Merriweather Fonts */}
         <link

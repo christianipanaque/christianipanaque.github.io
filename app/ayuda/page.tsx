@@ -31,7 +31,7 @@ export default function Ayuda({ }) {
             <main>
                 <section className="formulario">
                     <form action="https://formspree.io/f/mzzpbnnr" method="post">
-                        <div className="form-item">
+                        <div className="form-item max-w-screen-md my-0 mx-auto">
                             <h2>¿Cuáles son tus principales intereses de aprendizaje? (Selecciona todas las que apliquen)</h2>
                             <label><input type="checkbox" name="intereses" value="Tecnología y Programación" /> Tecnología y
                                 Programación</label><br />
@@ -52,10 +52,9 @@ export default function Ayuda({ }) {
                                 name="intereses_otro" /></label>
                         </div>
 
-                        <div className="form-item">
+                        <div className="form-item max-w-screen-md my-0 mx-auto">
                             <h2>¿Qué habilidades estás buscando desarrollar? (Selecciona todas las que apliquen)</h2>
-                            <label><input type="checkbox" name="habilidades" value="Programación (e.g., Python, JavaScript)" />
-                                Programación (e.g., Python, JavaScript)</label><br />
+                            <label><input type="checkbox" name="habilidades" value="Programación (e.g., Python, JavaScript)" /> Programación (e.g., Python, JavaScript)</label><br />
                             <label><input type="checkbox" name="habilidades" value="Análisis de Datos y Visualización" /> Análisis
                                 de Datos y Visualización</label><br />
                             <label><input type="checkbox" name="habilidades" value="Gestión de Proyectos" /> Gestión de
@@ -72,10 +71,9 @@ export default function Ayuda({ }) {
                             <label><input type="checkbox" name="habilidades" value="Otro" /> Otro: <input type="text"
                                 name="habilidades_otro" /></label>
                         </div>
-                        <div className="form-item">
+                        <div className="form-item max-w-screen-md my-0 mx-auto">
                             <h2>¿Qué materias te interesan? (Selecciona todas las que apliquen)</h2>
-                            <label><input type="checkbox" name="materias" value="Inteligencia Artificial y Machine Learning" />
-                                Inteligencia Artificial y Machine Learning</label><br />
+                            <label><input type="checkbox" name="materias" value="Inteligencia Artificial y Machine Learning" /> Inteligencia Artificial y Machine Learning</label><br />
                             <label><input type="checkbox" name="materias" value="Desarrollo Web" /> Desarrollo Web</label><br />
                             <label><input type="checkbox" name="materias" value="Marketing Digital" /> Marketing
                                 Digital</label><br />
@@ -90,7 +88,7 @@ export default function Ayuda({ }) {
                             <label><input type="checkbox" name="materias" value="Otro" /> Otro: <input type="text"
                                 name="materias_otro" /></label>
                         </div>
-                        <div className="form-item">
+                        <div className="form-item max-w-screen-md my-0 mx-auto">
                             <h2>¿Cuál es tu objetivo principal al buscar más educación? (Selecciona una)</h2>
                             <label><input type="radio" name="objetivo" value="Avanzar en mi carrera" /> Avanzar en mi
                                 carrera</label><br />
@@ -103,21 +101,37 @@ export default function Ayuda({ }) {
                             <label><input type="radio" name="objetivo" value="Otro" /> Otro: <input type="text"
                                 name="objetivo_otro" /></label>
                         </div>
-                        <div className="form-item">
-                            <label htmlFor="email">Tu Correo Electrónico (requerido):</label><br />
+                        <div className="form-item max-w-screen-md my-0 mx-auto">
+                            <h2>Tu Correo Electrónico:</h2>
+                            <label htmlFor="email">Correo Electrónico (requerido):</label><br />
                             <input
                                 type="email"
                                 id="email"
                                 value={email}
+                                name="email"
                                 onChange={handleEmailChange}
                                 required
+                                className="w-full p-4 text-lg rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-400 placeholder-gray-500 text-gray-800 transition-colors duration-200 ease-in-out"
+
                             />
                         </div>
-                        <button
-                            id="submit-button"
-                            type="submit"
-                            disabled={isSubmitDisabled}
-                        >Enviar</button>
+                        <br />
+                        {email}
+                        <div className="max-w-screen-md my-0 mx-auto text-center text-white">
+                            <div className="flex-col">
+                                <div className="my-2">
+                                    <button
+                                        className={`py-4 px-6 block w-full rounded-xl ${isSubmitDisabled
+                                            ? "bg-gray-400 cursor-not-allowed text-gray-700"
+                                            : "bg-red-700 hover:bg-red-800 text-white"
+                                            }`}
+                                        id="submit-button"
+                                        type="submit"
+                                        disabled={isSubmitDisabled}
+                                    >Enviar</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </section>
             </main>

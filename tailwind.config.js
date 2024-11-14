@@ -17,7 +17,7 @@ module.exports = {
       fontFamily: {
         merriweather: ["Merriweather", "ui-serif", "serif"],
         roboto: ["Roboto", "sans-serif"],
-      },
+      }
     },
   },
   plugins: [
@@ -31,10 +31,11 @@ module.exports = {
         body: {
           padding: "20px 20px 20px 20px",
           fontFamily: theme("fontFamily.roboto"),
+          fontSize: theme("fontSize.xl"),
         },
         h1: {
           fontFamily: theme("fontFamily.merriweather"),
-          fontSize: theme("fontSize.3xl"),
+          fontSize: theme("fontSize.5xl"),
           color: theme("colors.stone.800"),
           marginTop: theme("spacing.5"),
           marginBottom: theme("spacing.7"),
@@ -43,7 +44,7 @@ module.exports = {
         },
         h2: {
           fontFamily: theme("fontFamily.merriweather"),
-          fontSize: theme("fontSize.2xl"),
+          fontSize: theme("fontSize.3xl"),
           color: theme("colors.stone.800"),
           marginTop: theme("spacing.6"),
           marginBottom: theme("spacing.6"),
@@ -58,6 +59,12 @@ module.exports = {
         nav: {
           paddingBottom: "20px",
         },
+        label: {
+          fontSize: theme("fontSize.xl"),
+        },
+        input: {
+          padding: "0 7px 0 7px"
+        }
       });
     }),
   ],

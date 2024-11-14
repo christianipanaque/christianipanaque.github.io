@@ -1,59 +1,86 @@
+"use client"; // This marks the component as a Client Component
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import { useState } from "react";
 
-export default function Page({}) {
+
+export default function Page({ }) {
+  // State to manage the email input value and submit button state
+  const [email, setEmail] = useState('');
+  const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
+
+  // Function to handle email input change
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const emailValue = e.target.value;
+    setEmail(emailValue);
+
+    // Check validity of email and update button state
+    if (e.target.validity.valid && emailValue.trim() !== '') {
+      setIsSubmitDisabled(false);
+    } else {
+      setIsSubmitDisabled(true);
+    }
+  };
+
   return (
     <body className="bg-zinc-100 text-stone-500 leading-relaxed">
       <header>
         <h1>
-          Educación para Todos con la Inteligencia Artificial
+          Educación Digital sin Límites con la Inteligencia Artificial
         </h1>
       </header>
       <nav className="max-w-screen-md my-0 mx-auto text-center text-white">
         <div className="flex-col">
           <div className="my-2">
             <a
-              href="https://chatgpt.com"
+              href="https://chat.com"
               target="_blank"
-              className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg"
+              className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg hover:bg-red-800"
             >
-              ChatGPT Oficial
+              ChatGPT Oficial Disponible en Google Play y Apple.
             </a>
           </div>
           <div className="my-2">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.openai.chatgpt&pcampaignid=web_share"
-              target="_blank"
-              className="py-4 px-6 block bg-red-700 rounded-xl"
-            >
-              ChatGPT Google Play Store
-            </a>
-          </div>
-          <div className="my-2">
-            <a
-              href="https://apps.apple.com/us/app/chatgpt/id6448311069"
-              target="_blank"
-              className="py-4 px-6 block bg-red-700 rounded-xl"
-            >
-              ChatGPT Apple Store
-            </a>
+            <form action="https://formspree.io/f/mzzpbnnr" method="post">
+              <input
+                type="email"
+                id="email"
+                value={email}
+                name="email"
+                onChange={handleEmailChange}
+                placeholder="sucorreo@gmail.com Ingrese su correo para suscribirse gratis"
+                required
+                className="w-full p-4 text-lg rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-400 placeholder-gray-500 text-gray-800 transition-colors duration-200 ease-in-out"
+
+              />
+              <button
+                type="submit"
+                id="submit-button"
+                disabled={isSubmitDisabled}
+                className={`py-4 px-6 block w-full rounded-xl ${isSubmitDisabled
+                  ? "bg-gray-400 cursor-not-allowed text-gray-700"
+                  : "bg-red-700 hover:bg-red-800 text-white"
+                  }`}
+              >
+                Subscribirse
+              </button>
+            </form>
           </div>
         </div>
       </nav>
-      <main className="max-w-screen-md my-0 mx-auto">
+      <main className="max-w-screen-xl my-0 mx-auto">
         <section>
-          <img
-            src="./images/leader-male-001.webp"
-            alt="Peruvian male next to a robot. Peruvian flag in the background."
-          />
-          <div className="mb-8">
+          <a href="https://wa.link/sel7ya" target="_blank">
+            <img
+              src="./images/leader-male-001.webp"
+              alt="Peruvian male next to a robot. Peruvian flag in the background."
+            />
+          </a>
+          <div className="mb-8 max-w-screen-lg my-10 mx-auto">
             <h2>
-              Transforma tu Futuro con Educación Accesible y Personalizada
+              Transforme su Futuro con Educación Digital Accesible y Personalizada
             </h2>
             <p>
-              ¿Estás cansado de los altos costos y el acceso limitado a la
-              educación de calidad? ChatGPT utiliza la última tecnología en
-              inteligencia artificial para ofrecerte una experiencia educativa
-              única y accesible para todos.
+              ¿Aún cree que la inteligencia artificial es solo para programadores? Esa idea pertenece al pasado. La educación digital ya no es un lujo reservado para unos pocos, es una herramienta al alcance de cada ciudadano peruano. Hoy, herramientas como ChatGPT están listas para adaptarse a sus necesidades y transformar su aprendizaje. Con liderazgo y visión, cualquiera puede dominar la IA, sin necesidad de conocimientos técnicos, solo se requiere una mentalidad dispuesta a comandarla para maximizar su potencial.
             </p>
           </div>
           <img
@@ -370,7 +397,7 @@ export default function Page({}) {
           <div className="my-2">
             <a
               href="https://christianipanaque.com/ayuda.html"
-              className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg"
+              className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg hover:bg-red-800"
             >
               Ayuda
             </a>
