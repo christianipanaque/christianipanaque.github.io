@@ -56,9 +56,6 @@ module.exports = {
           width: "100%",
           boxShadow: "4px 4px 4px #9a9a9a",
         },
-        nav: {
-          paddingBottom: "20px",
-        },
         label: {
           fontSize: theme("fontSize.xl"),
         },

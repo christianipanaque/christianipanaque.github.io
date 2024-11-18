@@ -2,10 +2,9 @@
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import { useState } from "react";
 
-
-export default function Page({ }) {
+export default function Page({}) {
   // State to manage the email input value and submit button state
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
 
   // Function to handle email input change
@@ -14,7 +13,7 @@ export default function Page({ }) {
     setEmail(emailValue);
 
     // Check validity of email and update button state
-    if (e.target.validity.valid && emailValue.trim() !== '') {
+    if (e.target.validity.valid && emailValue.trim() !== "") {
       setIsSubmitDisabled(false);
     } else {
       setIsSubmitDisabled(true);
@@ -23,51 +22,60 @@ export default function Page({ }) {
 
   return (
     <body className="bg-zinc-100 text-stone-500 leading-relaxed">
-      <header>
-        <h1>
-          Educación Digital sin Límites con la Inteligencia Artificial
-        </h1>
-      </header>
-      <nav className="max-w-screen-md my-0 mx-auto text-center text-white">
-        <div className="flex-col">
-          <div className="my-2">
-            <a
-              href="https://chat.com"
-              target="_blank"
-              className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg hover:bg-red-800"
-            >
-              ChatGPT Oficial Disponible en Google Play y Apple.
-            </a>
-          </div>
-          <div className="my-2">
-            <form action="https://formspree.io/f/mzzpbnnr" method="post">
-              <input
-                type="email"
-                id="email"
-                value={email}
-                name="email"
-                onChange={handleEmailChange}
-                placeholder="sucorreo@gmail.com Ingrese su correo para suscribirse gratis"
-                required
-                className="w-full p-4 text-lg rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-400 placeholder-gray-500 text-gray-800 transition-colors duration-200 ease-in-out"
-
-              />
-              <button
-                type="submit"
-                id="submit-button"
-                disabled={isSubmitDisabled}
-                className={`py-4 px-6 block w-full rounded-xl ${isSubmitDisabled
-                  ? "bg-gray-400 cursor-not-allowed text-gray-700"
-                  : "bg-red-700 hover:bg-red-800 text-white"
-                  }`}
-              >
-                Subscribirse
-              </button>
-            </form>
-          </div>
-        </div>
+      <nav className="max-w-screen-sm my-0 mx-auto text-center bg-red-100">
+        <div>Atencion</div>
       </nav>
-      <main className="max-w-screen-xl my-0 mx-auto">
+      <div className="max-w-screen-sm my-0 mx-auto">
+        <img
+          className="rounded-full w-20"
+          src="./images/profile/profile-green-white-closer-med.jpg"
+          alt="Peruvian male next to a robot. Peruvian flag in the background."
+        />
+      </div>
+      <header>
+        <h1>Productos Exclusivos para Líderes.</h1>
+        <h2>
+          Explora libros y herramientas diseñados para hacer más con menos
+          esfuerzo.
+        </h2>
+      </header>
+      <div className="max-w-screen-sm my-0 mx-auto">
+        <div>
+          Recursos diseñados para profesionales. Compatible con herramientas
+          como ChatGPT. Fácil de implementar en tu trabajo diario.
+        </div>
+      </div>
+      <div className="max-w-screen-sm my-0 mx-auto">
+        <div className="w-15">
+          <a
+            href="#productos"
+            target="_blank"
+            className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg hover:bg-red-800"
+          >
+            Compra Ahora.
+          </a>
+        </div>
+      </div>
+      <div>★★★★★ Opiniones de Clientes.</div>
+      <div className="">
+        <a href="https://wa.link/sel7ya" target="_blank">
+          <img
+            src="./images/leader-male-001.webp"
+            alt="Peruvian male next to a robot. Peruvian flag in the background."
+          />
+        </a>
+      </div>
+      <div className="max-w-screen-sm my-0 mx-auto">
+        <a
+          href="#biblioteca"
+          target="_blank"
+          className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg hover:bg-red-800"
+        >
+          Explorar Biblioteca.
+        </a>
+      </div>
+      <div>★★★★★ Opiniones de Clientes.</div>
+      <main className="">
         <section>
           <a href="https://wa.link/sel7ya" target="_blank">
             <img
@@ -77,10 +85,18 @@ export default function Page({ }) {
           </a>
           <div className="mb-8 max-w-screen-lg my-10 mx-auto">
             <h2>
-              Transforme su Futuro con Educación Digital Accesible y Personalizada
+              Transforme su Futuro con Educación Digital Accesible y
+              Personalizada
             </h2>
             <p>
-              ¿Aún cree que la inteligencia artificial es solo para programadores? Esa idea pertenece al pasado. La educación digital ya no es un lujo reservado para unos pocos, es una herramienta al alcance de cada ciudadano peruano. Hoy, herramientas como ChatGPT están listas para adaptarse a sus necesidades y transformar su aprendizaje. Con liderazgo y visión, cualquiera puede dominar la IA, sin necesidad de conocimientos técnicos, solo se requiere una mentalidad dispuesta a comandarla para maximizar su potencial.
+              ¿Aún cree que la inteligencia artificial es solo para
+              programadores? Esa idea pertenece al pasado. La educación digital
+              ya no es un lujo reservado para unos pocos, es una herramienta al
+              alcance de cada ciudadano peruano. Hoy, herramientas como ChatGPT
+              están listas para adaptarse a sus necesidades y transformar su
+              aprendizaje. Con liderazgo y visión, cualquiera puede dominar la
+              IA, sin necesidad de conocimientos técnicos, solo se requiere una
+              mentalidad dispuesta a comandarla para maximizar su potencial.
             </p>
           </div>
           <img
@@ -392,11 +408,11 @@ export default function Page({ }) {
         </section>
       </main>
 
-      <nav className="max-w-screen-md my-0 mx-auto text-center text-white">
+      <nav className="">
         <div className="flex-col">
           <div className="my-2">
             <a
-              href="https://christianipanaque.com/ayuda.html"
+              href="https://christiam.pe/ayuda"
               className="py-4 px-6 block bg-red-700 rounded-xl shadow-lg hover:bg-red-800"
             >
               Ayuda
