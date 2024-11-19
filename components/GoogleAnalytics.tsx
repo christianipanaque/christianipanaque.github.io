@@ -3,7 +3,7 @@
 import Script from "next/script";
 import { useEffect } from "react";
 
-const GA_TRACKING_ID = "G-MD51YRYGX9"; // Replace with your GA tracking ID
+const GA_TRACKING_ID = "G-3R2G9RQHWY"; // Replace with your GA tracking ID
 
 // This component only runs client-side for Google Analytics tracking
 export default function GoogleAnalytics() {

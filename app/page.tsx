@@ -22,7 +22,7 @@ export default function Page({}) {
 
   return (
     <body className="bg-zinc-100 text-stone-500 leading-relaxed">
-      <div className="py-5 block mb-5 mx-auto text-center bg-red-600 text-red-200">
+      <div className="py-5 block mb-5 mx-auto text-center bg-red-600 text-red-50">
         <div>Última Oportunidad - 75% de Descuento</div>
       </div>
       <div className="max-w-screen-sm mt-7 mb-14 mx-auto flex justify-center align-middle">

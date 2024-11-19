@@ -1,9 +1,9 @@
 import "../styles/globals.css";
-import '../styles/checkboxes.css';
-import '../styles/radios.css';
+import "../styles/checkboxes.css";
+import "../styles/radios.css";
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
@@ -12,7 +12,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Educación Digital sin Límites con la Inteligencia Artificial</title>
+        <title>Tú También Puedes Dominar la Inteligencia Artificial.</title>
 
         {/* Preload Merriweather Fonts */}
         <link
