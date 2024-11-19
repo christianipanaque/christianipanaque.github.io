@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import "../styles/checkboxes.css";
 import "../styles/radios.css";
+import ProfilePageStructuredData from "../components/ProfileStructuredData";
 
 export default function RootLayout({
   children
@@ -13,6 +14,7 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tú También Puedes Dominar la Inteligencia Artificial.</title>
+        <ProfilePageStructuredData />
 
         {/* Preload Merriweather Fonts */}
         <link
