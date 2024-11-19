@@ -20,10 +20,10 @@ export default function Page({}) {
   };
 
   return (
-    <div className="bg-zinc-100 h-lvh">
-      <div className="py-5 block mb-5 mx-auto text-center bg-red-600 text-red-50">
+    <div className="bg-gradient-to-b from-zinc-100 to-zinc-400 h-lvh">
+      <div className="py-5 block mb-5 mx-auto text-center bg-black text-red-50">
         <div className="uppercase font-bold">
-          ¡Última Oportunidad - 75% de Descuento!
+          Abogados como tú impulsan el futuro de nuestro país 🇵🇪⚖️
         </div>
       </div>
       <div className="px-5">
@@ -36,7 +36,7 @@ export default function Page({}) {
                 alt="Christiam Martin Ipanaque Jimenez"
               />
             </div>
-            <div className="mx-3 flex flex-col justify-center text-sm">
+            <div className="ml-5 flex flex-col justify-center text-sm">
               <p className="text-stone-700 font-bold">
                 Christiam Martin Ipanaque Jimenez{" "}
                 <img
@@ -51,13 +51,18 @@ export default function Page({}) {
         </a>
         <header className="max-w-screen-lg my-0 mx-auto">
           <h1 className="text-5xl font-bold text-center leading-tight">
-            Tú También Puedes Dominar la Inteligencia Artificial.
+            Tú También Puedes Dominar ChatGPT
           </h1>
         </header>
-        <div className="max-w-screen-lg my-8 mx-auto">
-          <h2 className="text-xl text-center">
-            <p>Accede a libros y herramientas</p>
-            <p>creados para hacer más, con menos esfuerzo.</p>
+        <div className="max-w-screen-lg my-8 mx-auto flex justify-center">
+          <h2 className="text-xl">
+            <p className="mb-5">
+              Ahorra horas usando{" "}
+              <span className="font-bold">ChatGPT para Redactar:</span>
+            </p>
+            <p className="mb-1 font-bold">✅ Demandas Precisas.</p>
+            <p className="mb-1 font-bold">✅ Contratos Claros.</p>
+            <p className="mb-1 font-bold">✅ y Alegatos Contundentes.</p>
           </h2>
         </div>
         {/* <div className="max-w-screen-sm my-8 mx-auto">
@@ -78,7 +83,7 @@ export default function Page({}) {
                   name="email"
                   onChange={handleEmailChange}
                   required
-                  placeholder="Tu Correo Electrónico:"
+                  placeholder="¡Ingresa tu email y accede nuestra guía gratuita ya!"
                   className="w-full p-4 text-lg rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-400 placeholder-gray-500 text-gray-800 transition-colors duration-200 ease-in-out"
                 />
               </div>
@@ -86,19 +91,19 @@ export default function Page({}) {
                 <div className="flex-col">
                   <div className="my-2">
                     <button
-                      className={`py-4 px-6 block w-full rounded-xl text-2xl font-merriweather ${
-                        isSubmitDisabled
-                          ? "bg-gray-400 cursor-not-allowed text-gray-700"
-                          : "bg-red-700 hover:bg-red-800 text-white"
-                      }`}
+                      className="py-4 px-6 block w-full rounded-xl text-2xl font-merriweather bg-red-700 hover:bg-red-800 text-white shadow-lg"
                       id="submit-button"
                       type="submit"
                       disabled={isSubmitDisabled}
                     >
-                      Descargar
+                      Acceder Ahora
                     </button>
                   </div>
                 </div>
+                {/* <div className="text-zinc-700 font italic">
+                  La IA no tiene que ser complicada; aprende a usarla para
+                  alcanzar tus metas profesionales.
+                </div> */}
               </div>
             </form>
           </div>
