@@ -27,26 +27,28 @@ export default function Page({}) {
         </div>
       </div>
       <div className="px-5">
-        <div className="max-w-screen-sm mt-5 mb-7 mx-auto flex justify-center align-middle">
-          <div>
-            <img
-              className="rounded-full w-[60px]"
-              src="./images/profile/christiam-martin-ipanaque-jimenez.jpg"
-              alt="Christiam Martin Ipanaque Jimenez"
-            />
-          </div>
-          <div className="mx-3 flex flex-col justify-center text-sm">
-            <p className="text-stone-700 font-bold">
-              Christiam Martin Ipanaque Jimenez{" "}
+        <a href="https://www.facebook.com/christiamipanaque" target="_blank">
+          <div className="max-w-screen-sm mt-5 mb-7 mx-auto flex justify-center align-middle">
+            <div>
               <img
-                className="w-4 inline-block"
-                src="./images/profile/verified_icon.png"
-                alt="Meta Verified Icon"
+                className="rounded-full w-[60px] outline outline-[6px] outline-blue-400"
+                src="./images/profile/christiam-martin-ipanaque-jimenez.jpg"
+                alt="Christiam Martin Ipanaque Jimenez"
               />
-            </p>
-            <p className="text-stone-400">Ingeniero de Software Senior</p>
+            </div>
+            <div className="mx-3 flex flex-col justify-center text-sm">
+              <p className="text-stone-700 font-bold">
+                Christiam Martin Ipanaque Jimenez{" "}
+                <img
+                  className="w-4 inline-block"
+                  src="./images/profile/verified_icon.png"
+                  alt="Meta Verified Icon"
+                />
+              </p>
+              <p className="text-stone-400">Ingeniero de Software Senior</p>
+            </div>
           </div>
-        </div>
+        </a>
         <header className="max-w-screen-lg my-0 mx-auto">
           <h1 className="text-5xl font-bold text-center leading-tight">
             Tú También Puedes Dominar la Inteligencia Artificial.
