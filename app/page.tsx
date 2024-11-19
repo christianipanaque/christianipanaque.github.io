@@ -23,7 +23,7 @@ export default function Page({}) {
     <div className="bg-gradient-to-b from-zinc-100 to-zinc-400 h-lvh">
       <div className="py-5 block mb-5 mx-auto text-center bg-black text-red-50">
         <div className="uppercase font-bold">
-          Abogados como tú impulsan el futuro de nuestro país 🇵🇪⚖️
+          Abogados como tú impulsan el futuro de nuestro país 🇵🇪
         </div>
       </div>
       <div className="px-5">
@@ -91,7 +91,7 @@ export default function Page({}) {
                 <div className="flex-col">
                   <div className="my-2">
                     <button
-                      className="py-4 px-6 block w-full rounded-xl text-2xl font-merriweather bg-red-700 hover:bg-red-800 text-white shadow-lg"
+                      className="py-4 px-6 block w-full rounded-xl text-2xl font-merriweather bg-red-700 hover:bg-red-800 text-white shadow-lg cursor-pointer"
                       id="submit-button"
                       type="submit"
                       disabled={isSubmitDisabled}
