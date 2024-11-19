@@ -74,38 +74,19 @@ export default function Page({}) {
       </div> */}
         <div className="max-w-screen-sm my-0 mx-auto">
           <div>
-            <form action="https://formspree.io/f/mzzpbnnr" method="post">
-              <div className="form-item max-w-screen-md my-0 mx-auto">
-                <input
-                  type="email"
-                  id="email"
-                  value={email}
-                  name="email"
-                  onChange={handleEmailChange}
-                  required
-                  placeholder="¡Ingresa tu email y accede nuestra guía gratuita ya!"
-                  className="w-full p-4 text-lg rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-400 placeholder-gray-500 text-gray-800 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <div className="max-w-screen-md my-0 mx-auto text-center text-white">
-                <div className="flex-col">
-                  <div className="my-2">
-                    <button
-                      className="py-4 px-6 block w-full rounded-xl text-2xl font-merriweather bg-red-700 hover:bg-red-800 text-white shadow-lg cursor-pointer"
-                      id="submit-button"
-                      type="submit"
-                      disabled={isSubmitDisabled}
-                    >
-                      Acceder Ahora
-                    </button>
-                  </div>
+            <div className="max-w-screen-md my-0 mx-auto text-center text-white">
+              <div className="flex-col">
+                <div className="my-2">
+                  <a
+                    href="https://docs.google.com/document/d/18Psq_TmHDtOFLGaly7kf3MvloWj5ZiSr4BR8-NAKUu8/edit?usp=sharing"
+                    className="py-4 px-6 block w-full rounded-xl text-2xl font-merriweather bg-red-700 hover:bg-red-800 text-white shadow-lg cursor-pointer"
+                    type="submit"
+                  >
+                    Acceder Ahora
+                  </a>
                 </div>
-                {/* <div className="text-zinc-700 font italic">
-                  La IA no tiene que ser complicada; aprende a usarla para
-                  alcanzar tus metas profesionales.
-                </div> */}
               </div>
-            </form>
+            </div>
           </div>
           {/* <a
           href="#productos"
