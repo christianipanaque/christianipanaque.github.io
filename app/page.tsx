@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import CTA from "./components/CTA";
 
 export default function Page({}) {
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ export default function Page({}) {
   };
 
   return (
-    <div className="bg-gradient-to-b from-zinc-100 to-zinc-400 h-lvh">
+    <div className="bg-zinc-100 pb-12">
       <div className="py-5 block mb-5 mx-auto text-center bg-black text-red-50">
         <div className="uppercase font-bold">
           Abogados como tú impulsan el futuro de nuestro país 🇵🇪
@@ -28,11 +29,11 @@ export default function Page({}) {
       </div>
       <div className="px-5">
         <a href="https://www.facebook.com/christiamipanaque" target="_blank">
-          <div className="max-w-screen-sm mt-5 mb-7 mx-auto flex justify-center align-middle">
+          <div className="max-w-screen-sm mt-5 mb-6 mx-auto flex justify-center align-middle">
             <div>
               <img
                 className="rounded-full w-[60px] outline outline-[6px] outline-blue-400"
-                src="./images/profile/christiam-martin-ipanaque-jimenez.jpg"
+                src="./images/profile/profile-regular.jpg"
                 alt="Christiam Martin Ipanaque Jimenez"
               />
             </div>
@@ -49,20 +50,29 @@ export default function Page({}) {
             </div>
           </div>
         </a>
-        <header className="max-w-screen-lg my-0 mx-auto">
+      </div>
+      <div className="w-full max-w-full aspect-[5/2.4] overflow-hidden">
+        <img
+          className="w-full h-full object-cover object-center"
+          src="./images/chatgpt-para-abogados/chatgpt-para-abogados-peru.png"
+          alt="Libro Digital de ChatGPT para Abogados en Perú"
+        />
+      </div>
+      <div className="px-5">
+        <header className="max-w-screen-lg my-6 mx-auto">
           <h1 className="text-5xl font-bold text-center leading-tight">
-            Tú También Puedes Dominar ChatGPT
+            Accede a la Introducción Gratis
           </h1>
         </header>
-        <div className="max-w-screen-lg my-8 mx-auto flex justify-center">
+        <div className="max-w-screen-lg mb-8 mx-auto flex justify-center">
           <h2 className="text-xl">
             <p className="mb-5">
               Ahorra horas usando{" "}
               <span className="font-bold">ChatGPT para Redactar:</span>
             </p>
-            <p className="mb-1 font-bold">✅ Demandas Precisas.</p>
-            <p className="mb-1 font-bold">✅ Contratos Claros.</p>
-            <p className="mb-1 font-bold">✅ y Alegatos Contundentes.</p>
+            <p className="mb-2 font-bold">✅ Demandas Precisas.</p>
+            <p className="mb-2 font-bold">✅ Contratos Claros.</p>
+            <p className="mb-2 font-bold">✅ y Alegatos Contundentes.</p>
           </h2>
         </div>
         {/* <div className="max-w-screen-sm my-8 mx-auto">
@@ -77,13 +87,7 @@ export default function Page({}) {
             <div className="max-w-screen-md my-0 mx-auto text-center text-white">
               <div className="flex-col">
                 <div className="my-2">
-                  <a
-                    href="https://docs.google.com/document/d/18Psq_TmHDtOFLGaly7kf3MvloWj5ZiSr4BR8-NAKUu8/edit?usp=sharing"
-                    className="py-4 px-6 block w-full rounded-xl text-2xl font-merriweather bg-red-700 hover:bg-red-800 text-white shadow-lg cursor-pointer"
-                    type="submit"
-                  >
-                    Acceder Ahora
-                  </a>
+                  <CTA />
                 </div>
               </div>
             </div>

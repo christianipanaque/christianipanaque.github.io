@@ -30,7 +30,6 @@ module.exports = {
         },
         body: {
           fontFamily: theme("fontFamily.roboto"),
-          backgroundColor: theme("colors.red.600"),
           color: theme("colors.stone.800")
         },
         h1: {

@@ -189,7 +189,9 @@ export default function RootLayout({
         />
         <meta name="twitter:site" content="@christiamipanaque" />
       </head>
-      <body>{children}</body>
+      <body className="bg-zinc-100">
+        {children}
+      </body>
     </html>
   );
 }
