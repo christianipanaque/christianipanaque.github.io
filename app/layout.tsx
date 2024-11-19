@@ -100,11 +100,50 @@ export default function RootLayout({
         />
         <meta name="author" content="Christiam Martin Ipanaque Jimenez" />
         <link rel="canonical" href="https://christiam.pe/" />
-        <link rel="icon" href="https://christiam.pe/favicon.ico" />
+
+        <link
+          rel="icon"
+          href="https://christiam.pe/images/profile/favicon.ico"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="https://christiam.pe/images/profile/favicon-16x16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="https://christiam.pe/images/profile/favicon-32x32.png"
+        />
         <link
           rel="apple-touch-icon"
-          href="https://christiam.pe/apple-touch-icon.png"
+          sizes="180x180"
+          href="https://christiam.pe/images/profile/apple-touch-icon.png"
         />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="https://christiam.pe/images/profile/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="https://christiam.pe/images/profile/android-chrome-512x512.png"
+        />
+        <link
+          rel="manifest"
+          href="https://christiam.pe/images/profile/manifest.json"
+        />
+        <meta name="theme-color" content="#6C1111" />
+        <link
+          rel="icon"
+          href="https://christiam.pe/images/profile/favicon.ico"
+        />
+
         <title>
           Tú También Puedes Dominar la Inteligencia Artificial | Christiam.pe
         </title>

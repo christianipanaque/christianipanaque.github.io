@@ -30,24 +30,14 @@ module.exports = {
         },
         body: {
           fontFamily: theme("fontFamily.roboto"),
-          fontSize: theme("fontSize.xl"),
-          backgroundColor: theme("colors.zinc.100")
+          backgroundColor: theme("colors.red.600"),
+          color: theme("colors.stone.800")
         },
         h1: {
-          fontFamily: theme("fontFamily.merriweather"),
-          color: theme("colors.stone.800")
+          fontFamily: theme("fontFamily.merriweather")
         },
         h2: {
-          fontFamily: theme("fontFamily.merriweather"),
-          color: theme("colors.stone.800")
-        },
-        img: {
-          height: "auto",
-          width: "100%",
-          boxShadow: "4px 4px 4px #9a9a9a"
-        },
-        label: {
-          fontSize: theme("fontSize.xl")
+          fontFamily: theme("fontFamily.merriweather")
         },
         input: {
           padding: "0 7px 0 7px"
