@@ -8,15 +8,20 @@ export default function ExternalRedirectLink() {
       const targetUrl =
         "https://docs.google.com/document/d/18Psq_TmHDtOFLGaly7kf3MvloWj5ZiSr4BR8-NAKUu8/edit?usp=embed_facebook"; // Replace with your actual URL
 
-      // Detect TikTok in-app browser by checking platform constraints
-      const isTikTokBrowser =
-        navigator.userAgent.includes("Tiktok") ||
-        (navigator.platform === "iPhone" && navigator.vendor === "Apple");
+      const isTikTokBrowser = (() => {
+        if ("userAgentData" in navigator) {
+          const userAgentData = navigator.userAgentData as any;
+          return userAgentData.brands.some((brand: { brand: string }) =>
+            brand.brand.includes("TikTok")
+          );
+        }
+        return navigator.userAgent.includes("TikTok");
+      })();
 
       if (isTikTokBrowser) {
         event.preventDefault(); // Prevent default behavior of <a> tag
 
-        // Use external redirect handler
+        // Redirect to external browser
         window.location.href = `https://www.openinbrowser.com?url=${encodeURIComponent(
           targetUrl
         )}`;
@@ -36,17 +41,19 @@ export default function ExternalRedirectLink() {
       }
     };
   }, []);
-
   return (
     <a
       id="cta-link-id"
+      className="inline-block px-6 py-3 text-white bg-gradient-to-b from-[#B27A5B] to-[#A56D51] rounded-md shadow-lg hover:shadow-xl active:shadow-sm border border-[#8E5940] relative overflow-hidden transition-all duration-200 ease-in-out transform hover:translate-y-[-2px] active:translate-y-[2px]"
       href="https://docs.google.com/document/d/18Psq_TmHDtOFLGaly7kf3MvloWj5ZiSr4BR8-NAKUu8/edit?usp=embed_facebook"
-      className="py-4 px-6 block w-full rounded-xl text-2xl font-merriweather bg-[#cf7447] hover:bg-[#A56D51] text-white shadow-lg cursor-pointer"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Open the link in a new browser tab"
     >
-      Acceder Ahora
+      <span className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent rounded-md opacity-50"></span>
+      <span className="relative z-10 font-montserrat font-extrabold text-2xl uppercase">
+        Acceder Ahora
+      </span>
     </a>
   );
 }

@@ -22,8 +22,8 @@ export default function Page({}) {
 
   return (
     <div className="bg-zinc-100 pb-12">
-      <div className="py-5 block mb-5 mx-auto text-center bg-black text-red-50">
-        <div className="uppercase font-bold">
+      <div className="py-3 px-5 block mb-5 mx-auto text-center bg-black text-red-50">
+        <div className="uppercase font-bold font-inter">
           Abogados como tú impulsan el futuro de nuestro país 🇵🇪
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function Page({}) {
           </div>
         </a>
       </div>
-      <div className="w-full max-w-full aspect-[5/2.4] overflow-hidden">
+      <div className="w-full max-w-full aspect-[5/3] overflow-hidden">
         <img
           className="w-full h-full object-cover object-center"
           src="./images/chatgpt-para-abogados/chatgpt-para-abogados-peru.png"
@@ -59,22 +59,22 @@ export default function Page({}) {
         />
       </div>
       <div className="px-5">
-        <header className="max-w-screen-lg my-6 mx-auto">
-          <h1 className="text-5xl font-bold text-center leading-tight">
+        <header className="my-6">
+          <h1 className="text-4xl text-center leading-tight font-montserrat font-extrabold uppercase">
             Accede a la Introducción Gratis
           </h1>
         </header>
-        <div className="max-w-screen-lg mb-8 mx-auto flex justify-center">
-          <h2 className="text-xl">
+        {/* <div className="mb-6 flex justify-center">
+          <h2 className="text-lg font-inter">
             <p className="mb-5">
               Ahorra horas usando{" "}
-              <span className="font-bold">ChatGPT para Redactar:</span>
+              <span className="font-bold">ChatGPT para redactar:</span>
             </p>
             <p className="mb-2 font-bold">✅ Demandas Precisas.</p>
             <p className="mb-2 font-bold">✅ Contratos Claros.</p>
             <p className="mb-2 font-bold">✅ y Alegatos Contundentes.</p>
           </h2>
-        </div>
+        </div> */}
         {/* <div className="max-w-screen-sm my-8 mx-auto">
         <div>
           No necesitas ser un experto en tecnología para aprovechar la
