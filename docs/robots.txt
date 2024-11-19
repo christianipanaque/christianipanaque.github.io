@@ -1,0 +1,40 @@
+# Robots.txt file for https://christiam.pe
+# Last updated: 2024-11-19
+
+# Allow all web crawlers to access the main site
+User-agent: *
+Allow: /
+
+# Block duplicate or irrelevant query parameters
+Disallow: /*?sessionid=
+Disallow: /*?sort=
+Disallow: /*?ref=
+Disallow: /*?utm_source=
+Disallow: /*?filter=
+
+# Block sensitive directories and files
+Disallow: /admin/
+Disallow: /login/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /404/
+
+# Allow access to critical resources for rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+
+# Sitemap location
+Sitemap: https://christiam.pe/sitemap.xml
