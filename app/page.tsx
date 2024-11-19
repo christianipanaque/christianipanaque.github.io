@@ -29,7 +29,7 @@ export default function Page({}) {
         <div>
           <img
             className="rounded-full w-[90px]"
-            src="./images/profile/profile-blue-green-001.jpg"
+            src="./images/profile/christiam-martin-ipanaque-jimenez.jpg"
             alt="Peruvian male next to a robot. Peruvian flag in the background."
           />
         </div>
