@@ -1,6 +1,6 @@
 export default function ChatGPTParaAbogadosPage({}) {
   return (
-    <body className="max-w-screen-md my-0 mx-auto">
+    <div className="max-w-screen-md my-0 mx-auto">
       <header>
         <h1>ChatGPT para Abogados: La Eficiencia Legal 2024</h1>
         <h2>
@@ -198,6 +198,6 @@ export default function ChatGPTParaAbogadosPage({}) {
           />
         </section>
       </main>
-    </body>
+    </div>
   );
 }

@@ -30,15 +30,16 @@ module.exports = {
         },
         body: {
           fontFamily: theme("fontFamily.roboto"),
-          fontSize: theme("fontSize.xl")
+          fontSize: theme("fontSize.xl"),
+          backgroundColor: theme("colors.zinc.100")
         },
         h1: {
           fontFamily: theme("fontFamily.merriweather"),
-          color: theme("colors.stone.800"),
+          color: theme("colors.stone.800")
         },
         h2: {
           fontFamily: theme("fontFamily.merriweather"),
-          color: theme("colors.stone.800"),
+          color: theme("colors.stone.800")
         },
         img: {
           height: "auto",
