@@ -16,7 +16,7 @@
 }
 
 .main-theme section {
-  @apply my-14 px-5;
+  @apply my-14 px-5 py-5;
 }
 
 .main-theme section article {
@@ -104,3 +104,31 @@
     @apply text-xl rounded-full flex items-center justify-center;
   }
 }
+
+.button-custom {
+  @apply flex flex-col items-center justify-center text-center py-4 px-6 rounded-lg shadow-lg relative font-bold text-2xl;
+
+  /* Background Color */
+  @apply bg-green-500; /* Dark Slate */
+
+  /* Text Color */
+  @apply text-white font-montserrat font-extrabold; /* Subtle Peach for main text */
+
+  /* Outer Shadow */
+  @apply shadow-[0px_8px_0px_rgba(12,12,12,0.5)]; /* Rich Black shadow */
+
+  /* Button Dimensions */
+  @apply w-full;
+}
+
+.button-custom span {
+  @apply text-green-800 text-sm font-normal leading-tight mt-1 font-inter; /* Natural Green for secondary text */
+}
+
+/* Inner Shadow Effect */
+.button-custom::before {
+  content: '';
+  @apply absolute inset-0 rounded-lg shadow-inner opacity-20 pointer-events-none;
+  background: linear-gradient(to bottom, rgba(200,168,109,0.15), rgba(0,0,0,0.2)); /* Muted Gold to Rich Black gradient */
+}
+

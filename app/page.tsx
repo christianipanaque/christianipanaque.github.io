@@ -17,7 +17,7 @@ export default function Page({}) {
         {/* Profile photo */}
         <div className="px-5">
           <a href="https://www.facebook.com/christiamipanaque" target="_blank">
-            <div className="max-w-screen-sm mt-5 mb-6 mx-auto flex justify-center align-middle">
+            <div className="max-w-screen-sm mt-5 mb-6 mx-auto flex justify-center items-center">
               <div>
                 <img
                   className="rounded-full w-[60px] outline outline-[6px] outline-blue-400"
@@ -42,7 +42,7 @@ export default function Page({}) {
         {/* End Profile Photo */}
 
         {/* Intro image - disruptive */}
-        <div className="w-full max-w-full aspect-[5/3] overflow-hidden">
+        <div className="w-full max-w-full aspect-[5/3] overflow-hidden shadow-lg">
           <img
             className="w-full h-full object-cover object-center"
             src="./images/chatgpt-para-abogados/chatgpt-para-abogados-peru.png"
@@ -52,15 +52,31 @@ export default function Page({}) {
         {/* End Intro image - disruptive */}
 
         {/* CTA */}
-        <div className="flex justify-center my-8">
-          <CTA />
+        <div className="flex flex-col justify-center items-center mt-5 mb-4 px-5">
+          <CTA
+            primaryText="¡OFERTA FINAL - SOLO HOY!"
+            secondaryText="Impresione a sus colegas y clientes con procesos rápidos y precisos gracias a este libro."
+          />
+          <div className="px-5 mt-4">
+            <span className="font-semibold text-gray-500">
+              Disponible en
+              <img
+                className="w-20 inline-block"
+                src="./images/icons/google-drive-google-docs-google-sheets-icons.png"
+                alt="Google Drive, Google Docs, Google Sheets Icon png transparent background"
+              />
+            </span>
+            <span className="text-gray-400">
+              – Herramientas seguras y confiables de Google
+            </span>
+          </div>
         </div>
         {/* End CTA */}
 
         {/* End ATF Attention */}
         <div className="py-3 px-5 block mb-5 mx-auto text-center bg-black text-red-50">
           <div className="uppercase font-bold font-inter">
-            🚀¡Disponible solo por tiempo limitado! Asegure su ventaja
+            🚀¡Acceso disponible solo por tiempo limitado! Asegure su ventaja
             competitiva ahora 💼
           </div>
         </div>
@@ -68,21 +84,26 @@ export default function Page({}) {
 
         <section>
           <h2>El Derecho en la Era de la Inteligencia Artificial</h2>
-          <p>
-            En el corazón de cada abogado reside el arte de las palabras. Cada
-            término preciso, cada formulación lógica y cada argumento
-            estructurado son el fruto de años de práctica y dedicación. Sin
-            embargo, en el siglo XXI, este dominio del lenguaje puede
-            convertirse en algo mucho más poderoso gracias a la tecnología.
-          </p>
-          <p>
-            La inteligencia artificial (IA) está transformando industrias, y el
-            derecho no es la excepción. Para los abogados que lideren este
-            cambio, las oportunidades son inmensas. Nuestra guía de ChatGPT para
-            Abogados es la herramienta definitiva que le permitirá optimizar su
-            práctica y convertir cada interacción con la IA en resultados
-            legales impecables.
-          </p>
+          <article>
+            <p>
+              En el corazón de cada abogado reside el arte de las palabras. Cada
+              término preciso, cada formulación lógica y cada argumento
+              estructurado son el fruto de años de práctica y dedicación. Sin
+              embargo, en el siglo XXI, este dominio del lenguaje puede
+              convertirse en algo mucho más poderoso gracias a la tecnología.
+            </p>
+          </article>
+
+          <article>
+            <p>
+              La inteligencia artificial (IA) está transformando industrias, y
+              el derecho no es la excepción. Para los abogados que lideren este
+              cambio, las oportunidades son inmensas. Nuestra guía de ChatGPT
+              para Abogados es la herramienta definitiva que le permitirá
+              optimizar su práctica y convertir cada interacción con la IA en
+              resultados legales impecables.
+            </p>
+          </article>
         </section>
 
         <section>
@@ -558,8 +579,11 @@ export default function Page({}) {
         </section>
 
         {/* CTA */}
-        <div className="flex justify-center">
-          <CTA />
+        <div className="flex flex-col justify-center items-center mt-5 mb-4 px-5">
+          <CTA
+            primaryText="¡NO ESPERE MÁS!"
+            secondaryText="Únase al grupo selecto de abogados que optimizan su tiempo y lideran con tecnología."
+          />
         </div>
         {/* End CTA */}
       </div>
