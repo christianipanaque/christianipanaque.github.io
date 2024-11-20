@@ -408,6 +408,114 @@ export default function Page({}) {
             </strong>
           </p>
         </section>
+        <section className="feedback-section">
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="https://via.placeholder.com/40" alt="Profile" />
+              </div>
+              <div>
+                <div>Name Placeholder</div>
+                <p>
+                  Comment placeholder text goes here, describing the layout
+                  properly. Comment placeholder text goes here, describing the
+                  layout properly.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="https://via.placeholder.com/40" alt="Profile" />
+              </div>
+              <div>
+                <div>Name Placeholder</div>
+                <p>
+                  Comment placeholder text goes here, describing the layout
+                  properly. Comment placeholder text goes here, describing the
+                  layout properly.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="https://via.placeholder.com/40" alt="Profile" />
+              </div>
+              <div>
+                <div>Name Placeholder</div>
+                <p>
+                  Comment placeholder text goes here, describing the layout
+                  properly. Comment placeholder text goes here, describing the
+                  layout properly.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="https://via.placeholder.com/40" alt="Profile" />
+              </div>
+              <div>
+                <div>Name Placeholder</div>
+                <p>
+                  Comment placeholder text goes here, describing the layout
+                  properly. Comment placeholder text goes here, describing the
+                  layout properly.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="https://via.placeholder.com/40" alt="Profile" />
+              </div>
+              <div>
+                <div>Name Placeholder</div>
+                <p>
+                  Comment placeholder text goes here, describing the layout
+                  properly. Comment placeholder text goes here, describing the
+                  layout properly.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* CTA */}
         <div className="flex justify-center">

@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .main-theme {
-    @apply text-sm;
+  @apply text-sm;
 }
 
 .main-theme header {
@@ -46,4 +46,53 @@
 
 .main-theme section > div > div > div > div:last-child {
   @apply pl-2;
+}
+
+.feedback-section {
+  @apply bg-white p-6 border-red-900;
+
+  /* Card Container */
+  & > div {
+    @apply flex flex-col space-y-1 my-4 w-full max-w-xl;
+  }
+
+  /* Profile Picture and Content */
+  & > div > div:first-child {
+    @apply flex items-start space-x-3;
+  }
+
+  /* Profile Picture */
+  & > div > div:first-child > div:first-child {
+    @apply w-10 h-10 rounded-full overflow-hidden;
+  }
+
+  /* Content Wrapper */
+  & > div > div:first-child > div:last-child {
+    @apply flex-1 rounded-3xl px-4 py-2 bg-gray-100 border border-gray-100;
+  }
+
+  /* Name */
+  & > div > div:first-child > div:last-child > div {
+    @apply font-semibold text-sm;
+  }
+
+  /* Comment */
+  & > div > div:first-child > div:last-child > p {
+    @apply mt-1 text-sm leading-normal text-gray-800;
+  }
+
+  /* Reactions Section */
+  & > div > div:last-child {
+    @apply flex items-center justify-end space-x-2;
+  }
+
+  /* Reaction Icons */
+  & > div > div:last-child > div {
+    @apply flex -space-x-1;
+  }
+
+  /* Reaction Icon */
+  & > div > div:last-child > div > div {
+    @apply text-xl rounded-full flex items-center justify-center;
+  }
 }
