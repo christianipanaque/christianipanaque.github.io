@@ -37,7 +37,7 @@ export default function Page({}) {
                 alt="Christiam Martin Ipanaque Jimenez"
               />
             </div>
-            <div className="ml-5 flex flex-col justify-center text-sm">
+            <div className="ml-5 flex flex-col justify-center text-md">
               <p className="text-stone-700 font-bold">
                 Christiam Martin Ipanaque Jimenez{" "}
                 <img
