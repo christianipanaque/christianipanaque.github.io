@@ -33,9 +33,6 @@ module.exports = {
         body: {
           fontFamily: theme("fontFamily.inter"),
           color: theme("colors.stone.800")
-        },
-        input: {
-          padding: "0 7px 0 7px"
         }
       });
     })

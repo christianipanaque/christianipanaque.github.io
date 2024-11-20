@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import "../styles/checkboxes.css";
 import "../styles/radios.css";
+import "../styles/mobile-dev.css";
+import "../styles/theme.css";
 
 export const metadata = {
   title: "Tú También Puedes Dominar la Inteligencia Artificial | Christiam.pe",
@@ -189,7 +191,7 @@ export default function RootLayout({
         />
         <meta name="twitter:site" content="@christiamipanaque" />
       </head>
-      <body className="bg-zinc-100">
+      <body className="mobile-view">
         {children}
       </body>
     </html>

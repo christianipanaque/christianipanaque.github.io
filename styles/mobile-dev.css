@@ -1,0 +1,8 @@
+/* styles/theme.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mobile-view {
+  @apply max-w-[600px] mx-auto bg-gray-50 text-base border shadow-lg h-screen overflow-y-auto;
+}
