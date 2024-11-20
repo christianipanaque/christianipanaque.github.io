@@ -5,11 +5,11 @@ import CTA from "./components/CTA";
 export default function Page({}) {
   return (
     <main className="main-theme">
-      <div className="bg-zinc-100 pb-12">
+      <div className="pb-12">
         {/* Above Header Attention */}
         <div className="py-3 px-5 block mb-5 mx-auto text-center bg-black text-red-50">
           <div className="uppercase font-bold font-inter">
-            Abogados como tú impulsan el futuro de nuestro país 🇵🇪
+            💼 Abogados como tú impulsan el futuro de nuestro país 🇵🇪
           </div>
         </div>
         {/* End Above Header Attention */}
@@ -51,12 +51,20 @@ export default function Page({}) {
         </div>
         {/* End Intro image - disruptive */}
 
-        <section>
-          <p>
-            ¡Disponible solo por tiempo limitado! Asegure su ventaja competitiva
-            ahora.
-          </p>
-        </section>
+        {/* CTA */}
+        <div className="flex justify-center my-8">
+          <CTA />
+        </div>
+        {/* End CTA */}
+
+        {/* End ATF Attention */}
+        <div className="py-3 px-5 block mb-5 mx-auto text-center bg-black text-red-50">
+          <div className="uppercase font-bold font-inter">
+            🚀¡Disponible solo por tiempo limitado! Asegure su ventaja
+            competitiva ahora 💼
+          </div>
+        </div>
+        {/* End End ATF Attention */}
 
         <section>
           <h2>El Derecho en la Era de la Inteligencia Artificial</h2>
@@ -87,6 +95,61 @@ export default function Page({}) {
             paso hacia la implementación real y efectiva de herramientas
             generativas en su práctica legal.
           </p>
+        </section>
+
+        <section className="bg-white">
+          <h2>Testimonios de Éxito</h2>
+          <article>
+            <blockquote>
+              <p>
+                "Estimado Christiam Ipanaque, su guía me ha cambiado la vida
+                profesional. Si algo he aprendido con este libro es que puedo
+                confiar en ChatGPT para hacer el trabajo "tedioso" por mí. Con
+                estos comandos, le doy instrucciones claras y organizo
+                documentos en segundos. Nunca imaginé que la tecnología sería
+                tan accesible para nosotros. Gracias por poner en nuestras manos
+                un recurso que transforma la calidad de nuestro servicio."
+              </p>
+              <footer>
+                — Dra. Liliana Callirgos - Abogada Corporativa, Trujillo
+                <img src="./images/abogados/lawyer-003.png" alt="Profile" />
+              </footer>
+            </blockquote>
+          </article>
+          <article>
+            <blockquote>
+              <p>
+                "Ingeniero Christiam, debo admitir que nunca creí que la
+                inteligencia artificial pudiera integrarse tan bien a nuestra
+                práctica. Gracias a su libro digital y a la lista de prompts
+                para ChatGPT, ahora mis procesos son rápidos y eficaces. Hoy
+                preparo documentos en minutos y tengo más tiempo para dedicar a
+                mis casos y a mis clientes. Esta guía ha revolucionado mi manera
+                de trabajar, y es, sin duda, un recurso esencial para cualquier
+                abogado en Perú que quiera estar al día en el futuro del
+                derecho."
+              </p>
+              <footer>
+                — Dr. Juan Manuel Quispe - Abogado Penalista, Lima
+                <img src="./images/abogados/lawyer-005.png" alt="Profile" />
+              </footer>
+            </blockquote>
+          </article>
+          <article>
+            <blockquote>
+              <p>
+                "Ingeniero Christiam, Ahora genero contratos comerciales y
+                organizo mis archivos con una facilidad que nunca pensé posible.
+                No soy un experto en tecnología, pero su libro ha sido como una
+                clase intensiva de transformación digital. Mil gracias por
+                ayudarme."
+              </p>
+              <footer>
+                — Dr. Ernesto Chacón - Abogado Comercial, Chiclayo
+                <img src="./images/abogados/lawyer-008.png" alt="Profile" />
+              </footer>
+            </blockquote>
+          </article>
         </section>
 
         <section>
@@ -174,7 +237,7 @@ export default function Page({}) {
           </p>
         </section>
 
-        <section>
+        <section className="bg-white">
           <h2>Métodos Tradicionales vs. Nuestra Guía</h2>
 
           <div className="space-y-6">
@@ -307,55 +370,131 @@ export default function Page({}) {
           </article>
         </section>
 
-        <section>
-          <h2>Testimonios de Éxito</h2>
-          <article>
-            <blockquote>
-              <p>
-                "Nunca pensé que podría redactar contratos y analizar
-                jurisprudencia en tan poco tiempo. Esta guía no solo me ahorró
-                horas de trabajo, sino que también mejoró la calidad de mis
-                entregables."
-              </p>
-              <footer>— Abogada Corporativa, Lima</footer>
-            </blockquote>
-          </article>
-          <article>
-            <blockquote>
-              <p>
-                "La estructura de comandos es increíblemente práctica. Ahora
-                tengo más tiempo para centrarme en estrategias y atención al
-                cliente, mientras la IA maneja las tareas repetitivas."
-              </p>
-              <footer>— Abogado Penalista, Arequipa</footer>
-            </blockquote>
-          </article>
-          <article>
-            <blockquote>
-              <p>
-                "Lo mejor es que no necesito conocimientos técnicos. Esta guía
-                me enseñó exactamente qué hacer y cómo hacerlo."
-              </p>
-              <footer>— Abogada de Familia, Cusco</footer>
-            </blockquote>
-          </article>
+        <section className="feedback-section">
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="./images/abogados/lawyer-010.png" alt="Profile" />
+              </div>
+              <div>
+                <div>Dra. Cecilia Beatriz Ramos Torres</div>
+                <p>
+                  Me dedico al derecho corporativo y este libro ha sido esencial
+                  para la creación de acuerdos estratégicos. Realmente
+                  innovador.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="./images/abogados/lawyer-007.png" alt="Profile" />
+              </div>
+              <div>
+                <div>Lic. Ricardo López Fernández</div>
+                <p>
+                  SOY ABOGADO CIVILISTA Y HE USADO EL PROMPT PARA LA REDACCIÓN
+                  DE DEMANDAS DE DIVORCIO. ¡QUEDÓ PERFECTO! MUY RECOMENDADO.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="./images/abogados/lawyer-002.png" alt="Profile" />
+              </div>
+              <div>
+                <div>Gabriela Elizabeth Chávez Castillo</div>
+                <p>
+                  Como abogada penalista, he encontrado el prompt para prever
+                  contraargumentos extremadamente útil.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="./images/abogados/lawyer-004.png" alt="Profile" />
+              </div>
+              <div>
+                <div>Luis Alberto Ramírez Cornejo</div>
+                <p>
+                  Tenía dudas al principio, pero los resultados hablan por sí
+                  solos. Usé un prompt para revisar contratos y señalar riesgos,
+                  y funcionó...
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
+          {/* Review */}
+          <div>
+            <div>
+              <div>
+                <img src="./images/abogados/lawyer-009.png" alt="Profile" />
+              </div>
+              <div>
+                <div>Dr. Jorge Eduardo Salinas Rivera</div>
+                <p>
+                  Probé el prompt para generar estrategias legales y quedé muy
+                  satisfecho.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>❤️</div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section>
           <h2>Por Qué No Puede Esperar</h2>
-          <p>
-            El mercado legal está evolucionando rápidamente. Cada día más
-            abogados adoptan herramientas de IA, ganando ventaja en
-            productividad y precisión. Si no actúa ahora, corre el riesgo de
-            quedarse atrás en un entorno cada vez más competitivo.
-          </p>
-          <p>
-            <strong>Esta es su oportunidad para destacar.</strong>
-            No se trata solo de adoptar tecnología, sino de liderarla con
-            confianza y claridad. Nuestra guía no solo le enseñará a usar
-            ChatGPT, sino que le permitirá convertirlo en una extensión de su
-            habilidad profesional.
-          </p>
+          <article>
+            <p>
+              El mercado legal está evolucionando rápidamente. Cada día más
+              abogados adoptan herramientas de IA, ganando ventaja en
+              productividad y precisión. Si no actúa ahora, corre el riesgo de
+              quedarse atrás en un entorno cada vez más competitivo.
+            </p>
+          </article>
+          <article>
+            <p>
+              <strong>Esta es su oportunidad para destacar.</strong>
+              No se trata solo de adoptar tecnología, sino de liderarla con
+              confianza y claridad. Nuestra guía no solo le enseñará a usar
+              ChatGPT, sino que le permitirá convertirlo en una extensión de su
+              habilidad profesional.
+            </p>
+          </article>
         </section>
 
         <section>
@@ -382,139 +521,40 @@ export default function Page({}) {
 
         <section>
           <h2>El Momento Es Ahora</h2>
-          <p>
-            Con solo unas horas de dedicación, podrá transformar su práctica
-            para siempre. <strong>¿Por qué esperar?</strong> Cada comando que
-            aprenda a estructurar será un paso hacia una práctica legal más
-            rápida, precisa y exitosa.
-          </p>
-          <p>
-            <strong>
-              ¡No lo piense más! Asegure su guía ahora antes de que se agoten
-              las copias disponibles.
-            </strong>
-            Este es el momento de tomar el control, liderar con sus palabras y
-            aprovechar el futuro del derecho en el Perú.
-          </p>
-          <blockquote>
+          <article>
             <p>
-              "La IA no reemplaza a los abogados, los potencia. Usted no pierde
-              control, lo amplifica."
+              Con solo unas horas de dedicación, podrá transformar su práctica
+              para siempre. <strong>¿Por qué esperar?</strong> Cada comando que
+              aprenda a estructurar será un paso hacia una práctica legal más
+              rápida, precisa y exitosa.
             </p>
-          </blockquote>
-          <p>
-            <strong>
-              Descargue nuestra guía y sea el abogado que lidera el cambio.
-            </strong>
-          </p>
-        </section>
-        <section className="feedback-section">
-          {/* Review */}
-          <div>
-            <div>
-              <div>
-                <img src="https://via.placeholder.com/40" alt="Profile" />
-              </div>
-              <div>
-                <div>Name Placeholder</div>
-                <p>
-                  Comment placeholder text goes here, describing the layout
-                  properly. Comment placeholder text goes here, describing the
-                  layout properly.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>❤️</div>
-              </div>
-            </div>
-          </div>
-          {/* Review */}
-          <div>
-            <div>
-              <div>
-                <img src="https://via.placeholder.com/40" alt="Profile" />
-              </div>
-              <div>
-                <div>Name Placeholder</div>
-                <p>
-                  Comment placeholder text goes here, describing the layout
-                  properly. Comment placeholder text goes here, describing the
-                  layout properly.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>❤️</div>
-              </div>
-            </div>
-          </div>
+          </article>
 
-          {/* Review */}
-          <div>
-            <div>
-              <div>
-                <img src="https://via.placeholder.com/40" alt="Profile" />
-              </div>
-              <div>
-                <div>Name Placeholder</div>
-                <p>
-                  Comment placeholder text goes here, describing the layout
-                  properly. Comment placeholder text goes here, describing the
-                  layout properly.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>❤️</div>
-              </div>
-            </div>
-          </div>
-          {/* Review */}
-          <div>
-            <div>
-              <div>
-                <img src="https://via.placeholder.com/40" alt="Profile" />
-              </div>
-              <div>
-                <div>Name Placeholder</div>
-                <p>
-                  Comment placeholder text goes here, describing the layout
-                  properly. Comment placeholder text goes here, describing the
-                  layout properly.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>❤️</div>
-              </div>
-            </div>
-          </div>
-          {/* Review */}
-          <div>
-            <div>
-              <div>
-                <img src="https://via.placeholder.com/40" alt="Profile" />
-              </div>
-              <div>
-                <div>Name Placeholder</div>
-                <p>
-                  Comment placeholder text goes here, describing the layout
-                  properly. Comment placeholder text goes here, describing the
-                  layout properly.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>❤️</div>
-              </div>
-            </div>
-          </div>
+          <article>
+            <p>
+              <strong>
+                ¡No lo piense más! Asegure su guía ahora antes de que se agoten
+                las copias disponibles.
+              </strong>
+              Este es el momento de tomar el control, liderar con sus palabras y
+              aprovechar el futuro del derecho en el Perú.
+            </p>
+          </article>
+          <article>
+            <blockquote>
+              <p>
+                "La IA no reemplaza a los abogados, los potencia. Usted no
+                pierde control, lo amplifica."
+              </p>
+            </blockquote>
+          </article>
+          <article>
+            <p>
+              <strong>
+                Descargue nuestra guía y sea el abogado que lidera el cambio.
+              </strong>
+            </p>
+          </article>
         </section>
 
         {/* CTA */}

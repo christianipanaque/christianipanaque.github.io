@@ -19,12 +19,16 @@
   @apply my-14 px-5;
 }
 
+.main-theme section article {
+  @apply my-4;
+}
+
 .main-theme section h2 {
   @apply my-3 font-bold text-2xl font-merriweather;
 }
 
 .main-theme section h3 {
-  @apply my-1 font-bold text-lg;
+  @apply my-1 font-bold;
 }
 
 .main-theme section p {
@@ -38,6 +42,10 @@
 .main-theme section blockquote footer,
 .main-theme section article blockquote footer {
   @apply mt-2 text-right font-bold text-gray-800;
+}
+
+.main-theme section article blockquote footer img {
+  @apply w-10 h-10 rounded-full inline-block ml-3;
 }
 
 .main-theme section > div > div > div > div:first-child {
