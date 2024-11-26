@@ -5,8 +5,7 @@ import { useEffect } from "react";
 export default function ExternalRedirectLink({ primaryText, secondaryText }) {
   useEffect(() => {
     const handleExternalRedirect = (event: MouseEvent) => {
-      const targetUrl =
-        "https://docs.google.com/document/d/18Psq_TmHDtOFLGaly7kf3MvloWj5ZiSr4BR8-NAKUu8/edit?usp=embed_facebook"; // Replace with your actual URL
+      const targetUrl = "https://wa.me/message/GGSWDFMMNE3HP1"; // Replace with your actual URL
 
       const isTikTokBrowser = (() => {
         if ("userAgentData" in navigator) {
@@ -45,7 +44,7 @@ export default function ExternalRedirectLink({ primaryText, secondaryText }) {
     <a
       id="cta-link-id"
       className="button-custom"
-      href="https://docs.google.com/document/d/18Psq_TmHDtOFLGaly7kf3MvloWj5ZiSr4BR8-NAKUu8/edit?usp=embed_facebook"
+      href="https://wa.me/message/GGSWDFMMNE3HP1"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Open the link in a new browser tab"
