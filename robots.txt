@@ -1,5 +1,5 @@
 # Robots.txt file for https://christiam.pe
-# Last updated: 2024-11-19
+# Last updated: 2024-11-29
 
 # Allow all web crawlers to access the main site
 User-agent: *
