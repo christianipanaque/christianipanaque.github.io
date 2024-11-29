@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Large Table Example</title>
+    <script type="module" src="table.js"></script>
+    <!-- Import the table.js file -->
+  </head>
+  <body>
+    <h1>Large Table Example</h1>
+
+    <!-- Search bar and reset button -->
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search..."
+      oninput="searchTable()"
+    />
+    <button onclick="resetSearch()">Reset Search</button>
+
+    <!-- Table element -->
+    <table id="largeTable" border="1">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Section</th>
+          <th onclick="sortTable(1)">Category</th>
+          <th onclick="sortTable(2)">Sub-Category</th>
+          <th onclick="sortTable(3)">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data will be dynamically inserted here -->
+      </tbody>
+    </table>
+
+    <!-- Pagination controls -->
+    <div>
+      <button onclick="prevPage()">Previous</button>
+      <span id="pageInfo"></span>
+      <button onclick="nextPage()">Next</button>
+    </div>
+
+    <script>
+      // Call initializeTable when the page loads
+      window.addEventListener("DOMContentLoaded", () => {
+        initializeTable();
+      });
+
+      // Bind searchTable to the search input
+      function searchTable() {
+        window.searchTable();
+      }
+
+      // Bind resetSearch to the reset button
+      function resetSearch() {
+        window.resetSearch();
+      }
+
+      // Bind sortTable to the table header clicks
+      function sortTable(columnIndex) {
+        window.sortTable(columnIndex);
+      }
+
+      // Bind pagination functions
+      function prevPage() {
+        window.prevPage();
+      }
+
+      function nextPage() {
+        window.nextPage();
+      }
+    </script>
+  </body>
+</html>
